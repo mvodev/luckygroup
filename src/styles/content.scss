@@ -49,3 +49,22 @@
     background-color:  $button-color-hover;
   }
 }
+@media (max-width:1250px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content__right-column {
+    position: static;
+    .animation {
+      right: 0;
+      bottom: -100px;
+    }
+  }
+}
+
+@media (max-width:920px) {
+  .content {
+    padding-left: 50px;
+  }
+}
