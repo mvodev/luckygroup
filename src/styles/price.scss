@@ -7,7 +7,6 @@
   font-size: 1.07rem;
   line-height: 1.27rem;
   align-items: center;
-  gap: 12px;
   margin-top: 40px;
 
   &__link {
@@ -17,6 +16,7 @@
     position: relative;
     width: 98px;
     height: 38px;
+    margin-right: 12px;
   }
   &__img {
     position: absolute;

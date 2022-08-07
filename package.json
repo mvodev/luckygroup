@@ -1,7 +1,7 @@
 {
   "name": "SFBTech",
   "version": "1.0.0",
-  "description": "Layout for test task of luckyGroup",
+  "description": "Layout for test task of Lucky Group",
   "private": "true",
   "main": "index.js",
   "scripts": {
