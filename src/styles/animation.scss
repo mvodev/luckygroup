@@ -41,9 +41,25 @@
   background-position-x: -30px;
   background-position-y: -20px;
   z-index: -3;
-  animation: england .4s linear 3s, rotation 3s infinite 4.5s;
+  animation: england .4s linear 3s, rotation 3.5s infinite 5s;
   animation-fill-mode: forwards;
   transform-origin: 235px 140px;
+}
+
+.animation__italy{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url('../assets/img/italy.svg');
+  z-index: -3;
+  position: absolute;
+  top: 141px;
+  left: 365px;
+  background-position-y: -15px;
+  background-position-x: -25px;
+  animation: italy .4s linear 3.4s,rotation 3.5s infinite 5s;
+  animation-fill-mode: forwards;
+  transform-origin: 10px 265px;
 }
 
 .animation__india-big {
@@ -58,7 +74,7 @@
   background-position-x: -30px;
   background-position-y: -20px;
   z-index: -3;
-  animation: india-big .8s linear 3s, rotation 3s infinite 4.5s;
+  animation: india-big .4s linear 3.8s, rotation 3.5s infinite 5s;
   animation-fill-mode: forwards;
   transform-origin: -155px 140px;
 }
@@ -79,7 +95,7 @@
 .animation__india-small-1 {
   top: 141px;
   left: 365px;
-  animation: india-small-1 1.2s linear 3s, rotation 3s infinite 4.5s;
+  animation: india-small-1 .4s linear 4.2s, rotation 3.5s infinite 5s;
   animation-fill-mode: forwards;
   transform-origin: 250px -10px;
 }
@@ -87,7 +103,7 @@
 .animation__india-small-2 {
   top: 141px;
   left: 365px;
-  animation: india-small-2 1.6s linear 3s, rotation 3s infinite 4.5s;
+  animation: india-small-2 .4s linear 4.6s, rotation 3.5s infinite 5s;
   animation-fill-mode: forwards;
   transform-origin: -195px -10px;
 }
@@ -101,6 +117,18 @@
   to {
     top: 33px;
     left: 180px;
+  }
+}
+
+@keyframes italy {
+  from {
+    top: 141px;
+    left: 365px;
+  }
+
+  to {
+    top: -81px;
+    left: 400px;
   }
 }
 
