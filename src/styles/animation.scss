@@ -5,108 +5,105 @@
   background-image: url('../assets/img/girl.png');
   bottom: 154px;
   right: -65px;
+
+  &__circle,
+  &__border,
+  &__england,
+  &__italy, 
+  &__india-big,
+  &__india-small-1,
+  &__india-small-2{
+    border-radius: 50%;
+  }
+  &__england,
+  &__italy, 
+  &__india-big,
+  &__india-small-1,
+  &__india-small-2{
+    top: 141px;
+    left: 365px;
+  }
+
+  &__circle {
+    width: 280px;
+    height: 280px;
+    background-color: #48B774;
+    position: absolute;
+    left: 280px;
+    top: 70px;
+    z-index: -2;
+  }
+  &__border {
+    width: 449px;
+    height: 449px;
+    position: absolute;
+    border: 2px solid #E8E8E8;
+    left: 190px;
+    top: -44px;
+    z-index: -5;
+  }
+  &__england {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('../assets/img/england.svg');
+    background-position-x: -30px;
+    background-position-y: -20px;
+    z-index: -3;
+    animation: england .4s linear 3s, rotation 3.5s infinite 5s;
+    animation-fill-mode: forwards;
+    transform-origin: 235px 140px;
+  }
+  &__italy{
+    width: 70px;
+    height: 70px;
+    background-image: url('../assets/img/italy.svg');
+    z-index: -3;
+    position: absolute;
+
+    background-position-y: -15px;
+    background-position-x: -25px;
+    animation: italy .4s linear 3.4s,rotation 3.5s infinite 5s;
+    animation-fill-mode: forwards;
+    transform-origin: 10px 265px;
+  }
+  &__india-big {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url('../assets/img/india-big.svg');
+    background-position-x: -30px;
+    background-position-y: -20px;
+    z-index: -3;
+    animation: india-big .4s linear 3.8s, rotation 3.5s infinite 5s;
+    animation-fill-mode: forwards;
+    transform-origin: -155px 140px;
+  }
+
+  &__india-small-1,
+  &__india-small-2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('../assets/img/india-small.svg');
+    background-position-x: -25px;
+    background-position-y: -10px;
+    z-index: -3;
+  }
+
+  &__india-small-1 {
+    animation: india-small-1 .4s linear 4.2s, rotation 3.5s infinite 5s;
+    animation-fill-mode: forwards;
+    transform-origin: 250px -10px;
+  }
+
+  &__india-small-2 {
+    animation: india-small-2 .4s linear 4.6s, rotation 3.5s infinite 5s;
+    animation-fill-mode: forwards;
+    transform-origin: -195px -10px;
+  }
 }
 
-.animation__circle {
-  width: 280px;
-  height: 280px;
-  background-color: #48B774;
-  border-radius: 50%;
-  position: absolute;
-  left: 280px;
-  top: 70px;
-  z-index: -2;
-}
-
-.animation__border {
-  width: 449px;
-  height: 449px;
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #E8E8E8;
-  left: 190px;
-  top: -44px;
-  z-index: -5;
-}
-
-.animation__england {
-  border-radius: 50%;
-  position: absolute;
-  top: 141px;
-  left: 365px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-image: url('../assets/img/england.svg');
-  background-position-x: -30px;
-  background-position-y: -20px;
-  z-index: -3;
-  animation: england .4s linear 3s, rotation 3.5s infinite 5s;
-  animation-fill-mode: forwards;
-  transform-origin: 235px 140px;
-}
-
-.animation__italy{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-image: url('../assets/img/italy.svg');
-  z-index: -3;
-  position: absolute;
-  top: 141px;
-  left: 365px;
-  background-position-y: -15px;
-  background-position-x: -25px;
-  animation: italy .4s linear 3.4s,rotation 3.5s infinite 5s;
-  animation-fill-mode: forwards;
-  transform-origin: 10px 265px;
-}
-
-.animation__india-big {
-  border-radius: 50%;
-  position: absolute;
-  top: 141px;
-  left: 365px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-image: url('../assets/img/india-big.svg');
-  background-position-x: -30px;
-  background-position-y: -20px;
-  z-index: -3;
-  animation: india-big .4s linear 3.8s, rotation 3.5s infinite 5s;
-  animation-fill-mode: forwards;
-  transform-origin: -155px 140px;
-}
-
-.animation__india-small-1,
-.animation__india-small-2 {
-  border-radius: 50%;
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-image: url('../assets/img/india-small.svg');
-  background-position-x: -25px;
-  background-position-y: -10px;
-  z-index: -3;
-}
-
-.animation__india-small-1 {
-  top: 141px;
-  left: 365px;
-  animation: india-small-1 .4s linear 4.2s, rotation 3.5s infinite 5s;
-  animation-fill-mode: forwards;
-  transform-origin: 250px -10px;
-}
-
-.animation__india-small-2 {
-  top: 141px;
-  left: 365px;
-  animation: india-small-2 .4s linear 4.6s, rotation 3.5s infinite 5s;
-  animation-fill-mode: forwards;
-  transform-origin: -195px -10px;
-}
 
 @keyframes england {
   from {
