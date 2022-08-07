@@ -1,0 +1,21 @@
+@import './constants.scss';
+@import './fonts.scss';
+@import './reset.scss';
+@import './header.scss';
+@import './content.scss';
+@import './form.scss';
+@import './animation.scss';
+@import './price.scss';
+
+body {
+	font-family: $font-family-main,sans-serif;
+	font-size: $font-size;
+	background-color: $background-color;
+}
+
+.wrapper{
+	max-width: $container-width;
+	width: 100%;
+	margin: 0 auto;
+	height: 757px;
+}

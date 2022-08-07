@@ -1,0 +1,147 @@
+.animation {
+  width: 836px;
+  height: 557px;
+  position: relative;
+  background-image: url('../assets/img/girl.png');
+  bottom: 200px;
+  right: 0;
+}
+
+.animation__circle {
+  width: 280px;
+  height: 280px;
+  background-color: #48B774;
+  border-radius: 50%;
+  position: absolute;
+  left: 280px;
+  top: 70px;
+  z-index: -2;
+}
+
+.animation__border {
+  width: 449px;
+  height: 449px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #E8E8E8;
+  left: 190px;
+  top: -44px;
+  z-index: -5;
+}
+
+.animation__england {
+  border-radius: 50%;
+  position: absolute;
+  top: 141px;
+  left: 365px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url('../assets/img/england.svg');
+  background-position-x: -30px;
+  background-position-y: -20px;
+  z-index: -3;
+  animation: england .4s linear 3s, rotation 3s infinite 4.5s;
+  animation-fill-mode: forwards;
+  transform-origin: 235px 140px;
+}
+
+.animation__india-big {
+  border-radius: 50%;
+  position: absolute;
+  top: 141px;
+  left: 365px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url('../assets/img/india-big.svg');
+  background-position-x: -30px;
+  background-position-y: -20px;
+  z-index: -3;
+  animation: india-big .8s linear 3s, rotation 3s infinite 4.5s;
+  animation-fill-mode: forwards;
+  transform-origin: -155px 140px;
+}
+
+.animation__india-small-1,
+.animation__india-small-2 {
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url('../assets/img/india-small.svg');
+  background-position-x: -25px;
+  background-position-y: -10px;
+  z-index: -3;
+}
+
+.animation__india-small-1 {
+  top: 141px;
+  left: 365px;
+  animation: india-small-1 1.2s linear 3s, rotation 3s infinite 4.5s;
+  animation-fill-mode: forwards;
+  transform-origin: 250px -10px;
+}
+
+.animation__india-small-2 {
+  top: 141px;
+  left: 365px;
+  animation: india-small-2 1.6s linear 3s, rotation 3s infinite 4.5s;
+  animation-fill-mode: forwards;
+  transform-origin: -195px -10px;
+}
+
+@keyframes england {
+  from {
+    top: 141px;
+    left: 365px;
+  }
+
+  to {
+    top: 33px;
+    left: 180px;
+  }
+}
+
+@keyframes india-big {
+  from {
+    top: 141px;
+    left: 365px;
+  }
+
+  to {
+    top: 43px;
+    left: 580px;
+  }
+}
+
+@keyframes india-small-1 {
+  from {
+    top: 141px;
+    left: 365px;
+  }
+
+  to {
+    top: 197px;
+    left: 168px;
+  }
+}
+
+@keyframes india-small-2 {
+  from {
+    top: 141px;
+    left: 365px;
+  }
+
+  to {
+    top: 197px;
+    left: 608px;
+  }
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

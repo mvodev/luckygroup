@@ -1,0 +1,37 @@
+
+.form {
+  position: relative;
+  height: 62px;
+  max-width: 597px;
+  width: 100%;
+
+  &__submit {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #48B774;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 3.5px;
+    top: 3.5px;
+    cursor: pointer;
+    font-size: 35px;
+  }
+    &__submit:hover {
+    background-color: $button-color-hover;
+  }
+
+  &__input {
+    box-shadow: 0px 20px 30px rgba(222, 222, 222, 0.25);
+    border-radius: 100px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 1.07rem;
+    line-height: 1.25rem;
+    outline: none;
+    padding-left: 40px;
+  }
+
+}

@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 146px;
+  padding-right: 141px;
+  width: 100%;
+  padding-top: 30px;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    font-size: 1.67rem;
+    line-height: 2.5rem;
+    height: 40px;
+  }
+
+  &__logo-img {
+    flex-basis: 40px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 365px;
+    width: 100%;
+  }
+
+  &__nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  &__nav-menu-item {
+    list-style-type: none;
+  }
+  
+  &__nav-menu-item a {
+    color: #4A4A4A;
+    font-size: 1.07rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__sign-up {
+    width: 108px;
+    height: 42px;
+    background: $button-color;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.07rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    &__sign-up:hover {
+    background: $button-color-hover;
+  }
+}
