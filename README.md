@@ -1,6 +1,6 @@
   # Тестовое задание компании Lucky Group.
   ## Ссылка на Github Pages
-[]
+[https://mvodev.github.io/luckygroup/]
   ## Клонирование
       git clone https://github.com/mvodev/luckygroup.git
   ## Установка
