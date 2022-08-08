@@ -32,6 +32,10 @@
     width: 100%;
   }
 
+  &__nav-dropdown {
+    display: none;
+  }
+
   &__nav-menu {
     display: flex;
     flex-direction: row;
@@ -78,6 +82,10 @@
     padding-right: 20px;
 
     &__nav {
+      display: none;
+    }
+    &__nav-dropdown {
+      display: block;
       position: fixed;
       left: -100%;
       top: 0;
@@ -90,9 +98,11 @@
       overflow: auto;
       z-index: 10;
       max-width: 100%;
+      padding-top: 70px;
+      padding-left: 40px;
     }
 
-    &__nav.header__nav_is-opened {
+    &__nav-dropdown.header__nav_is-opened {
       left: 0;
     }
 
@@ -104,7 +114,7 @@
     }
 
     &__nav-menu-item a{
-      color: white;
+      color: rgb(128, 128, 128);
       font-size: 2rem;
     }
 

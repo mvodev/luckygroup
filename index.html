@@ -28,7 +28,7 @@
         Global
       </span>
     </div>
-    <nav class="header__nav js-header__nav">
+    <nav class="header__nav">
       <ul class="header__nav-menu">
         <li class="header__nav-menu-item">
           <a href="http://mock-adress-change-me">
@@ -52,6 +52,34 @@
         </li>
       </ul>
     </nav>
+    <nav class="dropdown header__nav-dropdown js-header__nav">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Navigation
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li class="header__nav-menu-item">
+          <a class="dropdown-item" href="http://mock-adress-change-me">
+            Mobile Top Up
+          </a>
+        </li>
+        <li class="header__nav-menu-item">
+          <a class="dropdown-item" href="http://mock-adress-change-me">
+            About
+          </a>
+        </li>
+        <li class="header__nav-menu-item">
+          <a class="dropdown-item" href="http://mock-adress-change-me">
+            Rate
+          </a>
+        </li>
+        <li class="header__nav-menu-item">
+          <a class="dropdown-item" href="http://mock-adress-change-me">
+            Help
+          </a>
+        </li>
+      </ul>
+    </nav>
     <a class="header__sign-up" href="http://mock-adress-change-me">
       Sign Up
     </a>
@@ -67,8 +95,8 @@
       <a class="content__get-started" href="http://mock-adress-change-me">Get Started</a>
       <form class="form" name="search-form" action="http://mock-adress-change-me" method="post">
         <input class="form__input" maxlength="12" minlength="4" name="form-input" type="text"
-          pattern="[[^@#\$%\^&*\(\)]]"
-          placeholder="Where do you want to call?" title="Минимум 4 символа, максимум 12, исключая !@#$%^&*()" required>
+          pattern="[[^@#\$%\^&*\(\)]]" placeholder="Where do you want to call?"
+          title="Минимум 4 символа, максимум 12, исключая !@#$%^&*()" required>
         <button class="form__submit " type="submit">
           <span class="material-icons">
             search
