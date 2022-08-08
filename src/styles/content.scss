@@ -15,7 +15,7 @@
     font-size: 3rem;
     line-height: 3.9rem;
     margin-top: 120px;
-    height: 183px;
+    min-height: 183px;
   }
   &__header i {
     color: #FF8345;
@@ -49,10 +49,13 @@
     background-color:  $button-color-hover;
   }
 }
+
 @media (max-width:1250px) {
   .content {
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
   }
   .content__right-column {
     position: static;
@@ -63,17 +66,13 @@
   }
 }
 
-@media (max-width:1250px) {
-  .content {
-    padding-left: 0;
-    align-items: center;
-  }
-}
-
 @media (max-width:540px) {
   .content {
     .animation {
       display: none;
     }
+  }
+  .content__header {
+    font-size: 2rem;
   }
 }
