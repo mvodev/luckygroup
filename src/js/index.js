@@ -1,2 +1,2 @@
 import '../styles/index.scss';
-import './form.js';
+import './burger/burger.js';

@@ -13,9 +13,12 @@ body {
 	background-color: $background-color;
 }
 
-.wrapper{
+.wrapper {
 	max-width: $container-width;
 	width: 100%;
 	margin: 0 auto;
 	height: 757px;
+	&.burger_is-opened {
+		overflow: hidden;
+	}
 }
