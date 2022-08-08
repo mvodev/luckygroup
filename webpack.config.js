@@ -8,7 +8,7 @@ module.exports = {
 	mode: 'production',
 	entry: './src/js/index.js',
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'docs'),
 		filename: 'scripts.js'
 	},
   module: {
@@ -34,7 +34,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/assets/favicon'),
-          to: path.resolve(__dirname, 'dist/favicon')
+          to: path.resolve(__dirname, 'docs/favicon')
         },
       ]
     }),
@@ -42,7 +42,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/assets/img'),
-          to: path.resolve(__dirname, 'dist/img')
+          to: path.resolve(__dirname, 'docs/img')
         },
       ]
     }),
