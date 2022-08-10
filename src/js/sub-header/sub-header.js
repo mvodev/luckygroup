@@ -1,4 +1,4 @@
-const getSubHeader = async ()=> {
+const getSubHeader = async () => {
   let subHeader = '';
   const result = await fetch('https://baconipsum.com/api/?type=lucky')
     .then(response => response.json());
