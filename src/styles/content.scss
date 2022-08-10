@@ -2,7 +2,7 @@
   padding-left: 149px;
   position: relative;
 
-  &__right-column {
+  &__animation {
     position: absolute;
     bottom: -200px;
     right: 0;
@@ -57,7 +57,7 @@
     padding: 0 10px 10px 10px;
     align-items: center;
   }
-  .content__right-column {
+  .content__animation {
     position: static;
     .animation {
       right: 0;
