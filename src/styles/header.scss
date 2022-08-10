@@ -46,6 +46,20 @@
   &__nav-menu-item {
     list-style-type: none;
   }
+
+  &__nav-menu-item:after {
+    display: block; 
+    content: ""; 
+    height: 1.5px; 
+    width: 0; 
+    margin: 0 auto;
+    background-color: #FF8345; 
+    transition: width 0.4s ease-in-out;  }
+
+  &__nav-menu-item:hover:after,
+  &__nav-menu-item:focus:after {
+    width: 21px;
+  }
   
   &__nav-menu-item a {
     color: #4A4A4A;
