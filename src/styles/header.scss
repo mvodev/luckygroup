@@ -67,6 +67,19 @@
     cursor: pointer;
     text-decoration: none;
   }
+  &__nav-menu-item:after {
+    display: block; 
+    content: ""; 
+    height: 1.5px; 
+    width: 0; 
+    margin: 0 auto;
+    background-color: #FF8345; 
+    transition: width 0.4s ease-in-out;  }
+
+  &__nav-menu-item:hover:after,
+  &__nav-menu-item:focus:after {
+    width: 21px;
+  }
 
   &__sign-up {
     width: 108px;
