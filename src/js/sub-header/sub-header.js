@@ -8,4 +8,4 @@ const getSubHeader = async ()=> {
   const subHeaderInDOM = document.querySelector('.js-sub-header');
   subHeaderInDOM.innerText = subHeader;
 }
-getSubHeader();
+export default getSubHeader;
